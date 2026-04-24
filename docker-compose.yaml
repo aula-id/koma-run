@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      RUST_LOG: info
+    restart: unless-stopped
+
+  # Uncomment to run agent service
+  # agent:
+  #   build: .
+  #   entrypoint: agent
+  #   command: serve
+  #   environment:
+  #     RUST_LOG: info
+  #   restart: unless-stopped

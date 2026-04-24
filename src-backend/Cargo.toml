@@ -1,0 +1,21 @@
+[package]
+name = "symposium-backend"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "symposium-backend"
+path = "src/main.rs"
+
+[dependencies]
+symposium-core = { path = "../src-core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+actix-web = "4"
+actix-ws = "0.3"
+actix-cors = "0.7"
