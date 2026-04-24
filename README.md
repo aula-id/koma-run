@@ -1,4 +1,4 @@
-# Symposium
+# KOMA.run
 
 Multi-agent coding workbench. Rust backend + Python agents + React frontend.
 

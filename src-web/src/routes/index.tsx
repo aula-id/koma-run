@@ -10,7 +10,7 @@ export const Route = createRoute({
 function Index() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-950">
-      <h1 className="text-4xl font-bold text-white">Symposium</h1>
+      <h1 className="text-4xl font-bold text-white">KOMA.run</h1>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 .PHONY: help dev-backend dev-agent dev-web check build-rust build-web build clean docker-build docker-up docker-down
 
 help:
-	@echo "Symposium — Multi-agent coding workbench"
+	@echo "KOMA.run — Multi-agent coding workbench"
 	@echo ""
 	@echo "Development:"
 	@echo "  make dev-backend    Run backend server"
@@ -21,10 +21,10 @@ help:
 	@echo "  make docker-down    Stop containers"
 
 dev-backend:
-	cd src-backend && cargo run -p symposium-backend
+	cd src-backend && cargo run -p koma-backend
 
 dev-agent:
-	cargo run -p symposium-agents --bin agent -- run
+	cargo run -p koma-agents --bin agent -- run
 
 dev-web:
 	cd src-web && npm run dev

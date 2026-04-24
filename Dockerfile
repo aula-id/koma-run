@@ -1,4 +1,4 @@
-# Multi-stage build for Symposium
+# Multi-stage build for KOMA.run
 # Stage 1: rust-builder
 # Stage 2: web-builder
 # Stage 3: runtime
@@ -45,10 +45,10 @@ RUN apt-get update && apt-get install -y \
 	ca-certificates \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY --from=rust-builder /app/target/release/symposium-backend /usr/local/bin/
+COPY --from=rust-builder /app/target/release/koma-backend /usr/local/bin/
 COPY --from=rust-builder /app/target/release/agent /usr/local/bin/
 COPY --from=web-builder /app/dist /srv/web
 
 EXPOSE 8080
 
-CMD ["symposium-backend"]
+CMD ["koma-backend"]

@@ -27,7 +27,7 @@ async fn ws_handler(req: HttpRequest, body: web::Payload) -> actix_web::Result<H
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     tracing_subscriber::fmt::init();
-    tracing::info!("symposium-backend listening on 0.0.0.0:8080");
+    tracing::info!("koma-backend listening on 0.0.0.0:8080");
 
     HttpServer::new(|| {
         let cors = Cors::permissive();

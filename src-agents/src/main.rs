@@ -1,8 +1,8 @@
 use clap::{Parser, Subcommand};
-use symposium_agents::run_agent_core;
+use koma_agents::run_agent_core;
 
 #[derive(Parser)]
-#[command(name = "agent", about = "Symposium agent CLI")]
+#[command(name = "agent", about = "KOMA.run agent CLI")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,

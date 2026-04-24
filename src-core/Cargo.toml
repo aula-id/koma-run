@@ -1,5 +1,5 @@
 [package]
-name = "symposium-core"
+name = "koma-core"
 edition.workspace = true
 version.workspace = true
 license.workspace = true
